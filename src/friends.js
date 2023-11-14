@@ -24,7 +24,7 @@ const names = Object.keys(values);
 
 export const checkForMatch = (searchFriend) => {
   if (names.includes(searchFriend?.toLowerCase())) {
-    return values[searchFriend];
+    return values[searchFriend.toLowerCase()];
   }
   return;
 };
